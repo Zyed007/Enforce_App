@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">100244258513-s2hkdne479q9gr1kr682orlto6lh0uoa.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">100244258513</string>
+    <string name="google_api_key" translatable="false">AIzaSyBZPSDH3ik7-OluThmf6MQWfFQHqPrZU5k</string>
+    <string name="google_app_id" translatable="false">1:100244258513:android:e97b23a475bb4fd49b8ff0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBZPSDH3ik7-OluThmf6MQWfFQHqPrZU5k</string>
+    <string name="google_storage_bucket" translatable="false">enforce-solution.appspot.com</string>
+    <string name="project_id" translatable="false">enforce-solution</string>
+</resources>

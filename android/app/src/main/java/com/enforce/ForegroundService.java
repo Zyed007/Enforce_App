@@ -1,4 +1,4 @@
-package com.enforcesolutions;
+package com.enforce;
 
 import android.app.Notification;
 import android.app.NotificationChannel;

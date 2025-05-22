@@ -1,4 +1,4 @@
-package com.enforcesolutions;
+package com.enforce;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,9 +27,9 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
-import static com.enforcesolutions.ForegroundService.reactContext;
-import static com.enforcesolutions.MainActivity.REQUEST_CODE_GPS_RESOLUTION_REQUIRED;
-import static com.enforcesolutions.MainActivity.sampleContext;
+import static com.enforce.ForegroundService.reactContext;
+import static com.enforce.MainActivity.REQUEST_CODE_GPS_RESOLUTION_REQUIRED;
+import static com.enforce.MainActivity.sampleContext;
 
 public class MyDataLocationManager extends ReactContextBaseJavaModule {
 

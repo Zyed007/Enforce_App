@@ -1,10 +1,10 @@
-package com.enforcesolutions;
+package com.enforce;
 import android.app.Activity;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
-import static com.enforcesolutions.ForegroundService.reactContext;
+import static com.enforce.ForegroundService.reactContext;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;

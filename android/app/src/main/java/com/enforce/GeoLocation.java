@@ -1,4 +1,4 @@
-package com.enforcesolutions;
+package com.enforce;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;

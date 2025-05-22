@@ -1,0 +1,20 @@
+com/enforce/MainActivity.java
+ com.enforce.MainActivity
+ com.enforce.MainActivity$1
+com/enforce/ForegroundService.java
+ com.enforce.ForegroundService
+ com.enforce.ForegroundService$1
+ com.enforce.ForegroundService$2
+com/enforce/MyDataLocationManager.java
+ com.enforce.MyDataLocationManager
+ com.enforce.MyDataLocationManager$1
+ com.enforce.MyDataLocationManager$2
+com/enforce/MainApplication.java
+ com.enforce.MainApplication
+ com.enforce.MainApplication$1
+com/enforce/BuildConfig.java
+ com.enforce.BuildConfig
+com/enforce/GeoLocation.java
+ com.enforce.GeoLocation
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

@@ -1,4 +1,4 @@
-package com.enforcesolutions;
+package com.enforce;
 
 import android.app.Application;
 import android.content.Context;

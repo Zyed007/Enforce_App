@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.enforcesolutions">
+  package="com.enforce">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -10,33 +10,38 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
 
-
-     <!-- android:exported="true" -->
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+      <!-- MainActivity should have android:exported attribute -->
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-        android:windowSoftInputMode="adjustResize">
+        android:windowSoftInputMode="adjustResize"
+        android:exported="true">  <!-- Add android:exported here -->
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-        <service
-            android:name=".ForegroundService"
-            android:foregroundServiceType="location"
-            android:enabled="true" />
+      
+      <!-- Add android:exported to the ForegroundService -->
+      <service
+        android:name=".ForegroundService"
+        android:foregroundServiceType="location"
+        android:enabled="true"
+        android:exported="true" />  <!-- Add android:exported here -->
+        
       <meta-data
-     android:name="com.google.android.geo.API_KEY"
-     android:value="AIzaSyB07iJHsnvn3LD8bS5zO3zIbizzYqKZJh0" />
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyB07iJHsnvn3LD8bS5zO3zIbizzYqKZJh0" />
     </application>
 
 </manifest>

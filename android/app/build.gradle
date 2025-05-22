@@ -81,7 +81,7 @@ project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
 ]
 
-apply from: "../../node_modules/react-native/react.gradle"
+// apply from: "../../node_modules/react-native/react.gradle"
 /**
  * Set this to true to create two separate APKs instead of one:
  *   - An APK that only works on ARM devices
@@ -122,18 +122,18 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     dexOptions {
         javaMaxHeapSize "4g"
      }
     defaultConfig {
-        applicationId "com.enforcesolutions"
+        applicationId "com.enforce"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
-        versionName "2.0"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true //Add this
         missingDimensionStrategy 'react-native-camera', 'mlkit'
     }
@@ -152,11 +152,11 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
-       release {
-            storeFile file('new-debug.keystore')
-            storePassword '12345678'
-            keyAlias 'androiddebugkey'
-            keyPassword '12345678'
+      release {
+            storeFile file('enforce-solution-key.keystore')
+            storePassword 'password123'
+            keyAlias 'enforce-solution-alias'
+            keyPassword 'password123'
         }
     }
     buildTypes {
@@ -187,11 +187,6 @@ android {
             }
         }
     }
-
-    // packagingOptions {
-    //     pickFirst '**/libc++_shared.so'
-    //     pickFirst '**/libfbjni.so'
-    // }
 }
 
 dependencies {
@@ -204,10 +199,7 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation "com.google.android.gms:play-services-base:17.0.0"
     implementation 'com.google.android.gms:play-services-location:17.1.0'
-    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
    // compile project(':react-native-geocoder')
-
-
 
     if (enableHermes) {
       def hermesPath = "../../node_modules/hermes-engine/android/";
@@ -225,4 +217,4 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
-apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+// apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
